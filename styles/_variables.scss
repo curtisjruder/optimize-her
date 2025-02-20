@@ -1,0 +1,41 @@
+:root{  
+    --colorPrimaryRGB: 255, 85, 240;  
+    --colorPrimary: rgb(var(--colorPrimaryRGB));
+
+    --colorPrimDarkRGB: 155, 0, 120;  
+    --colorPrimDark: rgb(var(--colorPrimDarkRGB));
+
+    --colorSecondRGB: 0, 150, 40;
+    --colorSecond: rgb(var(--colorSecondRGB));// rgb(236, 189, 255);
+
+    --colorBackgroundRGB: 32, 26, 26;
+    --colorBackground: rgb(var(--colorBackgroundRGB));
+    
+    --colorTextRGB: 219, 219, 219;
+    --colorText: rgb(var(--colorTextRGB));
+}
+
+$colorPrimary: var(--colorPrimary);
+$colorPrimDark: var(--colorPrimDark);
+
+$colorSecond: var(--colorSecond);// rgb(236, 189, 255);
+$colorBackground: var(--colorBackground);
+$colorText: var(--colorText);
+
+$screenSmall: 600px;
+$screenMed: 1000px;
+
+$fontXXLarge: calc(2vw + 40px);
+$fontXLarge: calc(.5vw + 32px);
+$fontLarge: calc(.4vw + 27px);
+$fontMed: calc(.3vw + 22.5px);
+$fontSmall: calc(0.2vw + 17px);
+$fontXSmall: calc(0.1vw + 15.5px);
+
+@mixin flexBox($justify) {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: center;    
+}

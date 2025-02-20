@@ -1,0 +1,50 @@
+:root {
+  --colorPrimaryRGB: 255, 85, 240;
+  --colorPrimary: rgb(var(--colorPrimaryRGB));
+  --colorPrimDarkRGB: 155, 0, 120;
+  --colorPrimDark: rgb(var(--colorPrimDarkRGB));
+  --colorSecondRGB: 0, 150, 40;
+  --colorSecond: rgb(var(--colorSecondRGB));
+  --colorBackgroundRGB: 32, 26, 26;
+  --colorBackground: rgb(var(--colorBackgroundRGB));
+  --colorTextRGB: 219, 219, 219;
+  --colorText: rgb(var(--colorTextRGB));
+}
+
+#intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  margin: 25vh auto;
+  color: var(--colorPrimary);
+  text-align: center;
+}
+#intro-section h1 {
+  font-size: calc(2vw + 40px);
+  text-shadow: var(--colorPrimary) 0 0 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  background-color: transparent;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background: radial-gradient(var(--colorBackground) 70%, var(--colorPrimary));
+}
