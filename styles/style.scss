@@ -1,17 +1,21 @@
 @import "./variables";
+@import "./background";
+@import "./footer";
+// @import url('https://fonts.cdnfonts.com/css/atteron-personal-use');
+
 
 #intro-section{
     @include flexBox(center);
     flex-direction: column;
-    height: 50%;
+    height: 100%;
     width: 100%;
-    margin: 25vh auto;
-    color: $colorPrimary;
+    margin: 20px auto;
+    color: $colorText;
 
     text-align: center;
     h1{
         font-size: $fontXXLarge;
-        text-shadow: $colorPrimary 0 0 30px;
+        text-shadow: $colorBackground 0 0 30px;
     }
 }
 
@@ -19,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-family: 'Georgia', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
     background-color: transparent;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -27,11 +31,101 @@
 }
 
 
-html{
-    min-width: 100vw;
-    min-height: 100vh;    
+// html{
+//     min-width: 100vw;
+//     min-height: 100vh;  
+//     background-color: $colorBackground;  
+// }
+
+body {
+    min-height: 100vh;
+    background-color: $colorBackground;
+    color: $colorText;
 }
 
-body{
-    background: radial-gradient($colorBackground 70%, $colorPrimary)
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: calc(100vh - 4rem);
+
+    .intro{
+        text-align: center;
+
+        img{
+            width: 32vh;
+            border-radius: 100%;
+            border-width: 5px;
+            border-color:$colorPrimary;
+        }
+
+        h1.title{
+            font-size: $fontXXLarge;
+            line-height: 1;
+        }
+    }
+
+    p{
+        padding:1rem;
+        font-size: $fontSmall;
+        width: 100%;
+
+        &.intro{
+            @media screen and (max-width: $screenSmall){
+                display: none;
+            }
+        }
+    }
+}
+
+.cursive{
+    font-family: 'Lucida Handwriting', 'Lucida Calligraphy', 'Apple Chancery', 'cursive','Brush Script Std', 'Brush Script MT' ;
+    font-size: $fontLarge;
+}
+
+
+
+a{
+    color: $colorText;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    &:hover{
+        background-color: $colorBackground;
+        color:$colorPrimary;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.7,0.7)
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-transition {
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.faded {
+    animation: fade-in 0.3s;
+    opacity: 1;
+}
+
+section.section{
+    width: 80%;
+    min-width: 400px;
+    margin: 2vh auto;
+    padding: 5vh 5vw;
+    background-color: $colorPrimary;
+    border-radius: 20px;
 }

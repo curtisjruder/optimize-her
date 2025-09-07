@@ -1,5 +1,6 @@
 :root{  
-    --colorPrimaryRGB: 255, 85, 240;  
+    --colorPrimaryRGB: 45, 25, 45;
+    // --colorPrimaryRGB: 167, 118, 174;
     --colorPrimary: rgb(var(--colorPrimaryRGB));
 
     --colorPrimDarkRGB: 155, 0, 120;  
@@ -8,10 +9,11 @@
     --colorSecondRGB: 0, 150, 40;
     --colorSecond: rgb(var(--colorSecondRGB));// rgb(236, 189, 255);
 
-    --colorBackgroundRGB: 32, 26, 26;
+    --colorBackgroundRGB: 167, 118, 174;
+    // --colorBackgroundRGB: 40, 40, 40;
     --colorBackground: rgb(var(--colorBackgroundRGB));
     
-    --colorTextRGB: 219, 219, 219;
+    --colorTextRGB: 255, 255, 255;
     --colorText: rgb(var(--colorTextRGB));
 }
 
