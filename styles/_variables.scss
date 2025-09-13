@@ -33,6 +33,7 @@ $fontLarge: calc(.4vw + 27px);
 $fontMed: calc(.3vw + 22.5px);
 $fontSmall: calc(0.2vw + 17px);
 $fontXSmall: calc(0.1vw + 15.5px);
+$fontXXSmall: calc(0.08vw + 11px);
 
 @mixin flexBox($justify) {
     display: flex;

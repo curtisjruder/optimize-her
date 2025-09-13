@@ -1,0 +1,78 @@
+.offer-cards{
+    @include flexBox(space-around);
+    flex-direction: column;
+
+    .offer-card{        
+        @include flexBox(space-around);
+        
+        background-color: $colorBackground;
+        border: 2px solid $colorPrimary;
+        padding: 0;
+        max-width: 900px;
+        border-radius: 10px;
+        margin: 5vh 5vw;
+        color: $colorPrimary;
+        fill: $colorBackground;
+
+        &:hover{
+            // transform: translate(2px, 2px);
+            border: 2px solid $colorText; 
+            transition: all 0.3s ease-in-out;
+            // border-width: 1px;
+            color: $colorText;
+            fill: $colorText;
+        }
+
+        h2{
+            border-bottom: solid 3px;
+            padding: 0;
+            margin: 2vh 2vw;
+            text-align: center;
+
+            @media screen and (max-width: $screenSmall){
+                margin: 0.5vh 0.5vw;
+            }
+            // &:hover{
+            //     border-bottom: 3px solid $colorText;
+            // }
+        }
+
+        p{
+            padding: 0;
+            margin: 1vh auto;
+            width: 90%;
+            color: inherit;
+            font-size: $fontXSmall;
+        }
+
+
+        svg{
+            // fill: $colorBackground;
+            fill: inherit;
+            background-color: $colorPrimary;          
+            border-radius: 50%;
+            height: calc(90px + 3vw);
+            width: auto;    
+
+            @media screen and (max-width: $screenSmall){
+                display: none;
+            }
+        }
+
+        .offer-descr{
+            width: 70%;
+
+            @media screen and (max-width: $screenSmall){
+                width: 85%;
+            }
+        }
+        ul{
+            margin: -0.5vh 0 1vh 4vw;
+        }
+    }
+}
+
+p.instructions{
+    font-size: $fontXSmall;
+    text-align: center;
+}
