@@ -11,10 +11,11 @@ class Footer extends HTMLElement{
         return `           
         <footer>
           <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Services">Services</a></li>                               
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>                               
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="mailto:tiffany@optimize-her.com">Contact</a></li>
           </ul>
           <ul class="social-row">            
             <li><a target="_blank" href="https://www.instagram.com/optimizeherpharmacist/"><i class="fab fa-instagram"></i></a></li>

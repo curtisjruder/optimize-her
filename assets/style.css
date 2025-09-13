@@ -177,6 +177,20 @@ p.instructions {
   text-align: center;
 }
 
+.testimonials .testimonial {
+  background-color: var(--colorBackground);
+  list-style-type: none;
+  font-size: calc(0.1vw + 15.5px);
+  font-family: "Lucida Calligraphy", "Apple Chancery", "cursive", "Brush Script Std", "Brush Script MT";
+  border: 2px solid var(--colorPrimary);
+  padding: 1vh 2vw;
+  max-width: 900px;
+  border-radius: 10px;
+  margin: 1vh 3vw;
+  color: var(--colorPrimary);
+  fill: var(--colorBackground);
+}
+
 #intro-section {
   display: flex;
   flex-wrap: wrap;

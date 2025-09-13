@@ -1,0 +1,22 @@
+.testimonials{
+    // 
+
+
+
+    .testimonial{
+        // margin: 1vh 2vw;
+        // color: $colorBackground;
+        background-color: $colorBackground;
+        list-style-type: none;
+        font-size: $fontXSmall;
+        font-family: 'Lucida Calligraphy', 'Apple Chancery', 'cursive','Brush Script Std', 'Brush Script MT' ;
+
+        border: 2px solid $colorPrimary;
+        padding: 1vh 2vw;
+        max-width: 900px;
+        border-radius: 10px;
+        margin: 1vh 3vw;
+        color: $colorPrimary;
+        fill: $colorBackground;
+    }
+}
