@@ -191,6 +191,35 @@ p.instructions {
   fill: var(--colorBackground);
 }
 
+section.disclaimer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+section.disclaimer h2 {
+  text-shadow: var(--colorPrimary);
+  font-size: calc(0.1vw + 15.5px);
+  padding-bottom: 0;
+}
+section.disclaimer p {
+  font-size: calc(0.08vw + 11px);
+  margin: 0;
+  line-height: 1.4;
+}
+section.disclaimer b {
+  line-height: inherit;
+}
+section.disclaimer a div {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: inherit;
+}
+section.disclaimer a:hover {
+  background-color: rgba(var(--colorPrimaryRGB), 0.5);
+  color: var(--colorBackground);
+  transition: all 0.1s ease-in-out;
+}
+
 #intro-section {
   display: flex;
   flex-wrap: wrap;
@@ -240,7 +269,9 @@ main .intro {
   text-align: center;
 }
 main .intro img {
-  width: 40vh;
+  width: 50%;
+  min-width: 200px;
+  max-width: 350px;
   border-radius: 100%;
   border-width: 5px;
   border-color: var(--colorPrimary);
@@ -295,35 +326,9 @@ a:hover {
 
 section.section {
   width: 80%;
-  min-width: 400px;
+  min-width: 300px;
   margin: 2vh auto;
   padding: 5vh 5vw;
   background-color: var(--colorPrimary);
   border-radius: 20px;
-}
-
-section.disclaimer {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 4vw;
-}
-section.disclaimer h2 {
-  text-shadow: var(--colorPrimary);
-  font-size: calc(0.1vw + 15.5px);
-  padding-bottom: 0;
-}
-section.disclaimer p {
-  font-size: calc(0.08vw + 11px);
-  margin: 0;
-  line-height: 1.8;
-}
-section.disclaimer a div {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: inherit;
-}
-section.disclaimer a:hover {
-  background-color: rgba(var(--colorPrimaryRGB), 0.5);
-  color: var(--colorBackground);
-  transition: all 0.1s ease-in-out;
 }

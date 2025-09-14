@@ -1,11 +1,12 @@
 .testimonials{
     // 
 
-
+    // @include flexBox(center);
 
     .testimonial{
         // margin: 1vh 2vw;
         // color: $colorBackground;
+        // width: 300px;
         background-color: $colorBackground;
         list-style-type: none;
         font-size: $fontXSmall;
